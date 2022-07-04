@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Minecraft</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="https://minecraft--duck132912.repl.co/icon.png"
+	 type="image/x-icon" />
+	<link rel="icon" href="https://minecraft--duck132912.repl.co/icon.png"
+	 type="image/x-icon" />
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body translate="no" onpageshow="updateidea();">
+		<script src="https://minecraft--duck132912.repl.co/script.js">
+		</script>
+		<link rel="stylesheet" type="text/css" href="https://minecraft--duck132912.repl.co/style.css">
+		<img alt="Minecraft" id="logo" src="https://minecraft--duck132912.repl.co/minecraft.svg"/>
+
+<!--Ten Title-->
+<div id="flashingtext">Tri van</div>
+
+	<main>
+	
+	<!--Link-->
+	<a href="#" class="button">Facebook</a>
+	<br>
+	
+	<a href="#" class="button">Youtube</a>
+	<a href="#" class="button">Instagram</a>
+	
+	
+	<audio id="audio">
+	  <source src="superhero.mp3">
+	</audio>
+	<button id="button" class="button">Play audio</button>
+	<button class="button button_small left">Options</button>
+	<button class="button button_small right" onclick="quit();">Quit</button>
+	<script src="https://minecraft--duck132912.repl.co/minecraft.js"></script>
+	<script type="text/javascript">
+
+	var button = document.getElementById("button");
+	var audio = document.getElementById("audio");
+	
+	button.addEventListener("click", function(){
+		const list = document.getElementById("imgg").classList;
+	  if(audio.paused){
+		audio.play();
+		button.innerHTML = "Pause audio";
+		list.add("description__img");
+	  } else {
+		audio.pause();
+		button.innerHTML = "Play audio";
+		list.remove("description__img");
+	}
+	});
+	</script>
+	</main>
+
+<div class="description">
+	<img src="bg.png" alt="" id="imgg">
+	<div>@Tri van</div>
+</div>
+</body>
+</html>
